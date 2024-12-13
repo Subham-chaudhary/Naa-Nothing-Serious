@@ -36,7 +36,7 @@ $('document').ready(function () {
                 }
                 localStorage.setItem("username", username);
                 alert('Login successful.' + '\nWelcome ' + username);
-                window.location.href = "index.html";
+                window.location.href = "/";
             }
         });
     });

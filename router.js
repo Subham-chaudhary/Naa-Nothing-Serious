@@ -1,8 +1,6 @@
 function checkLogin(user) {
-    console.log("notonLogin: " + notonLogin());
-    console.log("user: " + user);
     if (user && !(notonLogin())) {
-        window.location.href = "index.html";
+        window.location.href = "/";
     } else if (!user && notonLogin()) {
         logout();
     }
@@ -16,10 +14,9 @@ function notonLogin() {
     return true;
 }
 function logout() {
-    console.log('logout');
     try {
         localStorage.removeItem("username");
-        window.location.href = "login.html";
+        window.location.href = "login";
     } catch (e) {
         console.log(e);
     }

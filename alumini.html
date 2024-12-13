@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
     <title>School Management System</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" crossorigin="anonymous">
-    <script type="module" src="index.js"></script>
+    <script type="module" src="alumini.js"></script>
+    <link rel="stylesheet" href="alumini.css">
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./designs/carousel.css">
 </head>
 
 <body>
@@ -21,7 +25,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-brand" href="#">School Management System</a>
+                        <a class="navbar-brand" href="/">School Management System</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -62,59 +66,19 @@
         </div>
     </header>
     <main>
-
-        <div class="container mt-3"><div class="alert alert-info text-light  fade show" role="alert">
-            This data is verified and editable by the school authorities.     </div>
-
-        <div class="container">
-            <div class="row">
-                <form class="col-md-8">
-                    <div class="row float-left form-inline my-2 my-lg-0">
-                    <div class="form-inline my-2 my-lg-0 col-md-8" title="Search">
-                        <input class=" form-control mr-sm-2  bg-dark text-light" type="search" placeholder="Search"
-                            aria-label="Search" id="search">
-                    </div>
-                    <div class="form-text my-2 my-lg-0 col-md-4" title="Filter">
-                        <button class="mr-2 btn bg-dark text-light" value="reset" id="reset" type="reset">X</button>
-                    </div>
-                </form>
-                </div>
-                <div class="col-md-4">
-                    <div class="float-right form-inline my-2 my-lg-0">
-                        <button class='btn btn-primary' id="btnedit" title="Edit Selected" disabled>
-                            <fa class='fa fa-edit'></fa>
-                        </button>
-                        <button class='btn btn-danger ml-1' id="btndelete" title="Delete Selected" disabled>
-                            <fa class='fa fa-trash'></fa>
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="container mt-3">
+            <div class="alert alert-info text-light  fade show" role="alert">
+                This is our school alumini on focus. </div>
         </div>
-        <div class="container mt-1 mb-3">
-            <div class="table-responsive tableView flex-grow-1">
-                <table class="table table-dark table-hover table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th style="width: 25%;">Name</th>
-                            <th style="width: 10%;">Age</th>
-                            <th style="width: 10%;">Semester</th>
-                            <th style="width: 30%;">Redistration Number</th>
-                            <th style="width: 6%;">Select</th>
-                        </tr>
-                    </thead>
-                    <tbody id="myTable" class="tableBody">
-                    </tbody>
-                </table>
-            </div>
+        <div class="container">
+        <div class="row" id="alumini">    
+        </div>
         </div>
     </main>
-        <footer>
-            <div class="footer text-center bg-dark text-light">
-                <p>Copyright &copy; 2024 School Management System of Kendriya Vidyalaya by Subham Chaudhary.</p>
-            </div>
-        </footer>
-
+    <footer>
+        <div class="footer text-center bg-dark text-light">
+            <p>Copyright &copy; 2024 School Management System of Kendriya Vidyalaya by Subham Chaudhary.</p>
+        </div>
+    </footer>
 </body>
-
 </html>

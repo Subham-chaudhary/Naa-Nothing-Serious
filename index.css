@@ -1,9 +1,10 @@
 .tableView {
-    height: calc(100vh - 225px);
+    max-height: calc(100vh - 225px);
     scrollbar-width: none;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 100px 20px rgba(6, 0, 111, 0.8);
+   
 }
 
 .tableBody {
