@@ -23,6 +23,7 @@ function logout() {
 }
 
 function validateUser() {
+    localStorage.setItem("username", null);
     let username = localStorage.getItem("username");
     if (username === null) {
         return checkLogin(false);
