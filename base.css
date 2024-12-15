@@ -1,0 +1,50 @@
+header {
+    background-color: rgb(0, 0, 45, 0.7);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    box-shadow: 10px 0px 10px 1px rgba(6, 0, 123, 1);
+}
+
+body {
+    background-color: rgb(0, 0, 22);
+    height: 100vh;
+}
+
+footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown-menu {
+    background-color: rgb(0, 0, 40);
+    box-shadow: 0px 0px 5px 0px rgb(72, 63, 255);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(0, 0, 111);
+}
+
+.checkbox {
+    accent-color: rgb(0, 0, 192);
+    scale: 1.5;
+}
+
+.checkbox:checked {
+    border-color: rgb(231, 0, 0);
+}
+
+.checkbox:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.checkbox:checked:hover {
+    box-shadow: 0 0 5px rgba(255, 0, 13, 0.5);
+}
+
+.alert-info {
+    background-color: rgb(11, 11, 54);
+    box-shadow: 0 0 15px 0px rgba(0, 0, 255, 0.5);
+}
