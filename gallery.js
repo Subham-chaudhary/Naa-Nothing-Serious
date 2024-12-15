@@ -1,6 +1,9 @@
 import { validateUser, logout } from './router.js';
 $(document).ready(function () {
     validateUser();
+    $('#logout').on('click', function () {
+        logout();
+    })
     const students = [
         {
             name: "Vinayak",

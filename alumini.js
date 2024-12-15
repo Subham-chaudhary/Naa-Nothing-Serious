@@ -2,6 +2,9 @@ import { validateUser, logout } from './router.js';
 $('document').ready(function () {
     validateUser();
     console.log('document loaded');
+    $('#logout').on('click', function () {
+        logout();
+    }); 
     const students =[
         {
             "info": "Vinayak is a brilliant student who loves solving complex math problems and enjoys playing chess.",
